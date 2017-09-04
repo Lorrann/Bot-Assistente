@@ -2,11 +2,14 @@
   "luis_schema_version": "2.1.0",
   "versionId": "0.1",
   "name": "Bot-Assistente",
-  "desc": "Bot-Assistente ;)",
+  "desc": "",
   "culture": "pt-br",
   "intents": [
     {
-      "name": "saudar"
+      "name": "None"
+    },
+    {
+      "name": "Saudar"
     }
   ],
   "entities": [],
@@ -19,47 +22,32 @@
   "utterances": [
     {
       "text": "bom dia",
-      "intent": "saudar",
+      "intent": "Saudar",
       "entities": []
     },
     {
       "text": "boa tarde",
-      "intent": "saudar",
-      "entities": []
-    },
-    {
-      "text": "oi",
-      "intent": "saudar",
+      "intent": "Saudar",
       "entities": []
     },
     {
       "text": "olá",
-      "intent": "saudar",
+      "intent": "Saudar",
       "entities": []
     },
     {
       "text": "boa noite",
-      "intent": "saudar",
+      "intent": "Saudar",
       "entities": []
     },
     {
-      "text": "tudo bem",
-      "intent": "saudar",
+      "text": "como vai?",
+      "intent": "Saudar",
       "entities": []
     },
     {
-      "text": "quero comida",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "quero feijão",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "quero arroz",
-      "intent": "None",
+      "text": "tudo bem com você?",
+      "intent": "Saudar",
       "entities": []
     }
   ]
