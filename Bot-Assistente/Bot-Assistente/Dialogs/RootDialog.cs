@@ -54,7 +54,8 @@ namespace Bot_Assistente.Dialogs
         [LuisIntent("Ajudar")]
         public async Task Ajudar(IDialogContext context, LuisResult result)
         {
-            await context.PostAsync("Como posso te ajudar?");
+            await context.PostAsync("Sou Alice, um bot que te ajuda a escolher destinos para viagens!\n\n\nVocê pode perguntar coisas como Quero " +
+                "Viajar para EUROPA,\nQueri ir para uma praia tranquila,\nQuero conhecer lugares frios,\nEntão vamos lá, pra onde deseja viajar? ");
 
             context.Wait(MessageReceived);
         }
