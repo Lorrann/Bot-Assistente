@@ -50,6 +50,14 @@ namespace Bot_Assistente.Dialogs
             context.Done("");
         }
 
+        [LuisIntent("Ajudar")]
+        public async Task Ajudar(IDialogContext context, LuisResult result)
+        {
+            await context.PostAsync("Como posso te ajudar?");
+
+            context.Wait(MessageReceived);
+        }
+
         #endregion
 
 
