@@ -54,7 +54,7 @@ namespace Bot_Assistente
 
                 var connector = new ConnectorClient(new Uri(message.ServiceUrl));
                 var reply = message.CreateReply();
-                reply.Text = "Olá, sou Alice em que posso ajudar?";
+                reply.Text = "Olá, sou Alice, o seu auxiliar em que posso ajudar?";
 
                 await connector.Conversations.ReplyToActivityAsync(reply);
             }

@@ -60,6 +60,14 @@ namespace Bot_Assistente.Dialogs
             context.Wait(MessageReceived);
         }
 
-        #endregion
-    }
+		[LuisIntent("Viagem")]
+		public async Task Viagem(IDialogContext context, LuisResult result)
+		{
+			await context.PostAsync("Diga um destino para onde deseja viajar?");
+
+			context.Wait(MessageReceived);
+		}
+
+		#endregion
+	}
 }
